@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ParcialGuilardes</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="num">
+        Ingrese un número por favor
+    </string>
+    <string name="bienvenido">
+        <b>Bienvenido/a a la calculadora de Luna!</b>
+    </string>
+    <string name="operacion">
+        ¿Qué operación desea realizar?
+    </string>
+    <string name="sum"><b>+</b></string>
+    <string name="resta"><b>-</b></string>
+    <string name="mult"><b>x</b></string>
+    <string name="div"><b>/</b></string>
+    <string name="tv_calculo">¡A calcular!</string>
+    <string name="calcular">Calcular resultado</string>
+
+    <string name="tv_fin">
+        <b>El resultado de la operación que realizaste es el siguiente:</b>
+    </string>
+    <string name= "lorem_ipsum"></string>
+</resources>

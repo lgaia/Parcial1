@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/lightpink"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bienvenido"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:paddingTop="70dp"
+        android:paddingBottom="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_num1"
+        android:textColorHint="@color/gray"
+        android:hint="@string/num"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        android:paddingBottom="20dp" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_num2"
+        android:textColorHint="@color/gray"
+        android:hint="@string/num"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_num1"
+        app:layout_constraintBottom_toTopOf="@id/tv_operation"
+        android:paddingTop="20dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_operation"
+        app:layout_constraintTop_toBottomOf="@id/et_num2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingTop="30dp"
+        android:paddingBottom="20dp"
+        android:text="@string/operacion"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        />
+    <Button
+        android:id="@+id/btn_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_operation"
+        android:layout_marginTop="35dp"
+        app:layout_constraintEnd_toStartOf="@id/btn_resta"
+        android:text="@string/sum"
+        android:backgroundTint="@color/darkpink" />
+    <Button
+        android:id="@+id/btn_resta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/btn_sum"
+        app:layout_constraintTop_toBottomOf="@id/tv_operation"
+        app:layout_constraintEnd_toStartOf="@id/btn_mult"
+        android:layout_marginTop="35dp"
+        android:text="@string/resta"
+        android:backgroundTint="@color/darkpink" />
+    <Button
+        android:id="@+id/btn_mult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/btn_resta"
+        app:layout_constraintTop_toBottomOf="@id/tv_operation"
+        app:layout_constraintEnd_toStartOf="@id/btn_division"
+
+        android:layout_marginTop="35dp"
+        android:text="@string/mult"
+        android:backgroundTint="@color/darkpink" />
+    <Button
+        android:id="@+id/btn_division"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/btn_mult"
+        app:layout_constraintTop_toBottomOf="@id/tv_operation"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginTop="35dp"
+        android:text="@string/div"
+        android:backgroundTint="@color/darkpink" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_calcular"
+        app:layout_constraintTop_toBottomOf="@id/btn_resta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_calcular"
+        android:text="@string/tv_calculo"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_calcular"
+        app:layout_constraintTop_toBottomOf="@id/tv_calcular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:backgroundTint="@color/darkpink"
+        android:text="@string/calcular"
+        android:textSize="23sp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
